@@ -1,0 +1,183 @@
+body{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+
+	button{
+		font-size: 32px;
+		color: #fff;
+		border: 1px solid #46ACC2;
+	}
+	    .tela{
+	    	font-size: 32px;
+	    	padding-left: 12px;
+	    	border: 4px solid #46ACC2;
+	    	color:#4A5759;
+	    	background-color:#25303133;
+	    	text-align: left;
+	    	grid-area: tela;
+	    }
+
+	    .tela:focus{
+	    	outline: none;
+	    	border: 4px solid #46ACC2;
+	    }
+
+	    .tela2{
+	    	font-size: 25px;
+	    	padding-left: 12px;
+	    	padding-right: 12px;
+	    	border: 4px solid #253031;
+	    	background-color:#253031;
+	    	color:#fff;
+	    	margin-top:10px;
+	    	height:60px;
+	    	grid-area: tela2;
+	    }
+
+	    ::placeholder{
+	    	color: #fff;
+	    }
+
+	    .tela2:focus{
+	    	outline: none;
+	    	border: 4px solid #46ACC2;
+	    	color:#fff;
+	    }
+
+	     .division{
+	    	background-color:#253031;
+	    }
+
+	     .clean{
+	    	background-color:#253031;
+	    }
+
+	     .cleanAll{
+	    	background-color:#253031;
+	    }
+
+	     .cleanX{
+	    	background-color:#253031;
+	    }
+
+	     .oneByX{
+	    	background-color:#253031;
+	    }
+
+	     .potency{
+	    	background-color:#253031;
+	    }
+
+	    .squareRoot{
+	    	background-color:#253031;
+	    }
+
+	    .percentage{
+	    	background-color:#253031;
+	    }
+
+	    .seven{
+	    	background-color: #0E3B43;
+	    }
+
+	    .eight{
+	    	background-color: #0E3B43;
+	    }
+
+	    .nine{
+	    	background-color: #0E3B43;
+	    }
+        
+        .multiplication{
+        	background-color:#253031;
+        }
+
+        .four{
+        	background-color: #0E3B43;
+        }
+
+        .five{
+        	background-color: #0E3B43;
+        }
+
+        .six{
+        	grid-area: six;
+        	background-color: #0E3B43;
+        }
+
+        .minus{
+        	background-color:#253031;
+        }
+	    
+	    .one{
+	    	background-color: #0E3B43;
+
+	    }
+
+	    .two{
+	    	background-color: #0E3B43;
+	    }
+
+	    .three{
+	    	background-color: #0E3B43;
+	    }
+
+	    .plus{
+	    	background-color:#253031;
+	    }
+
+	    .plusOrMinus{
+	    	background-color:#253031;
+	    }
+
+	    .zero{
+	    	background-color: #0E3B43;
+	    }
+
+	    .coma{
+	    	background-color:#253031;
+	    }
+
+	    .equal{
+	    	background-color: #357266
+	    }
+
+	    .sen{
+	       background-color: #357266
+	    }
+
+	    .cos{
+	       background-color: #357266
+	    }
+
+	    .tan{
+	       background-color: #357266
+	    }
+
+	    .log{
+	       background-color: #357266
+	    }
+
+		main{
+			padding: 30px 30px 30px 80px;
+			border: 3px solid green;
+			width: 600px;
+			height: 870px;
+			display:grid;
+			grid-template-columns:20% 20% 20% 20%;
+			grid-template-rows: 80px 80px 80px 80px 80px 80px 80px 80px 80px;
+			grid-row-gap: 10px;
+			grid-column-gap: 10px;
+			grid-template-areas:"tela2 tela2 tela2 tela2" 
+			                     "tela tela tela tela"
+			                     "division clean cleanAll cleanX"
+			                     "oneByX potency squareRoot percentage"
+			                     "sen cos tan log"
+			                     "seven eight nine multiplication"
+			                     "four five six minus"
+			                     "one two three plus"
+			                     "plusOrMinus zero coma equal";
+		     }
