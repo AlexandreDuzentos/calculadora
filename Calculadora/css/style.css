@@ -1,4 +1,6 @@
-body{
+html, body{
+	    width: 100%;
+	    height: 100%;
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
@@ -9,6 +11,7 @@ body{
 		font-size: 32px;
 		color: #fff;
 		border: 1px solid #46ACC2;
+		border-radius: 5px;
 	}
 	    .tela{
 	    	font-size: 32px;
@@ -18,6 +21,7 @@ body{
 	    	background-color:#25303133;
 	    	text-align: left;
 	    	grid-area: tela;
+	    	border-radius: 5px;
 	    }
 
 	    .tela:focus{
@@ -32,9 +36,11 @@ body{
 	    	border: 4px solid #253031;
 	    	background-color:#253031;
 	    	color:#fff;
-	    	margin-top:10px;
-	    	height:60px;
+	    	/*margin-top:10px;*/
+	    	height:40px;
 	    	grid-area: tela2;
+	    	border-radius: 5px;
+
 	    }
 
 	    ::placeholder{
@@ -162,15 +168,21 @@ body{
 	    }
 
 		main{
-			padding: 30px 30px 30px 80px;
-			border: 3px solid green;
-			width: 600px;
-			height: 870px;
+			/*padding: 30px 30px 30px 80px;*/
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			padding: 15px;
+			background-color: #0E9594;
+			border: 3px solid #0E9594;
+			border-radius: 10px;
+			width:35%;
+			height: 85vh;
 			display:grid;
-			grid-template-columns:20% 20% 20% 20%;
-			grid-template-rows: 80px 80px 80px 80px 80px 80px 80px 80px 80px;
-			grid-row-gap: 10px;
-			grid-column-gap: 10px;
+			grid-template-columns:repeat(4,20%);
+			grid-template-rows: repeat(100px,9);
+			grid-gap: 6px 6px;
 			grid-template-areas:"tela2 tela2 tela2 tela2" 
 			                     "tela tela tela tela"
 			                     "division clean cleanAll cleanX"
@@ -180,4 +192,8 @@ body{
 			                     "four five six minus"
 			                     "one two three plus"
 			                     "plusOrMinus zero coma equal";
+		     }
+
+		     @media(max-width: 900px){
+		     	main{width: 90%}
 		     }

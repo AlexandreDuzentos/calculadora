@@ -35,7 +35,7 @@
                //Press the calculator buttons by the keyboard keys
                document.addEventListener('keypress',(event) => {
             	const key = event.key
-            	console.log(key)
+                console.log(key)
 
             	switch(key) {
             		case "0":
